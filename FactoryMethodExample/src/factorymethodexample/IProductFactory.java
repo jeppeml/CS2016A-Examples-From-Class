@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package factoerymethodexample;
+package factorymethodexample;
+
+import factoerymethodexample.BE.Product;
 
 /**
  *
  * @author jeppjleemoritzled
  */
-public enum ProductType
+public interface IProductFactory
 {
-    BIL,
-    CYKEL
+    public Product createProduct(ProductType type, String kategori);
 }
